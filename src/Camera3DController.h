@@ -15,6 +15,20 @@ constexpr float cameraFovy = 45.0f;
 constexpr int cameraPerspective = CAMERA_PERSPECTIVE;
 
 
-Camera GetDefaultCamera();
+class Camera3DController {
+private:
+    Camera camera;
+    bool isFreeMode;
+
+public:
+    Camera3DController();
+
+    void Update();              
+    void ToggleFreeMode();      
+    void Reset();
+
+
+    Camera GetCamera() const { return camera; }
+};
 
 #endif //INC_3DVIRTUALWORLDPHYSICS_CAMERA3D_H

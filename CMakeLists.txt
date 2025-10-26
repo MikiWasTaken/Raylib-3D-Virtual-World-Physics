@@ -19,8 +19,8 @@ endif()
 # Your executable target
 add_executable(mmo-virtual-world
         src/main.cpp
-        src/Camera3D.cpp
-        src/Camera3D.h
+        src/Camera3DController.cpp
+        src/Camera3DController.h
         src/Scene.cpp
         src/Scene.h
 )
